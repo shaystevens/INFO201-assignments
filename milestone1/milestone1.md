@@ -122,5 +122,7 @@ ___<h2>Glossary of Terminology</h2>___
 
 ___<h2>Follow-Up Checklist</h2>___
 <p>
-
+<ul>
+<li>Can you please into detail about the differences on how you operate between NZ & AU?
+</ul>
 </p>
