@@ -82,9 +82,34 @@ same stock as the physical stores </td>
 <br>
 
 ___<h2>List of Non-Functional Requirements</h2>___
-<p>
 
-</p>
+<table>
+<tr>
+<th>Name</th>
+<th>Explaination</th>
+<th>Category</th>
+</tr>
+<tr>
+<td>Virtual stack</td>
+<td>The website must allow customers to flick through a virtual stack of albums.</td>
+<td>Usability</td>
+</tr>
+<tr>
+<td>Security</td>
+<td>The website must be secure, specifically the payment details so malicious indviduals do not compromise user/business private information</td>
+<td>Reliability</td>
+</tr>
+<tr>
+<td>Item sort</td>
+<td>User's must be able to sort items by relevance, artist etc.</td>
+<td>Usability</td>
+</tr>
+<tr>
+<td>Website accesibility</td>
+<td>Users from Australia and New Zealand must be able to access the website and there will be different features for each country for example .com.au/.co.nz</td>
+<td>Supportability</td>
+</tr>
+</table>
 
 <br>
 
