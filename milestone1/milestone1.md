@@ -23,56 +23,56 @@ ___<h2>List of Functional Requirements</h2>___
 <tr>
 <td>Website stock</td>
 <td>The online store will have the
-same stock as the physical stores </td>
+same stock as the physical stores. The client said they generally wanted the same stock for online and physical shops</td>
 <td>Employees that manage stock</td>
-<td>Should</td>
+<td>Must</td>
 <td></td>
 </tr>
 <tr>
-<td>Membership sign up</td>
-<td>There must be a membership sign up form that allows customers to sign up if they wish to</td>
+<td>Membership register</td>
+<td>There must be a membership sign up form that allows customers to sign up if they wish to. The client told me about a membership card and showed me their membership sign up form</td>
 <td>Customers</td>
 <td>Must</td>
 <td></td>
 </tr>
 <tr>
 <td>Item search</td>
-<td>Customers must be able to search for items</td>
+<td>Customers must be able to search for items. The client said they wanted the ability for customers to be able to sort by revelance/artist/etc</td>
 <td>Customers</td>
 <td>Must</td>
 <td></td>
 </tr>
 <tr>
 <td>Promotions</td>
-<td>The home page shall have promotions that promotes certain titles on the home page</td>
+<td>The home page shall have promotions that promotes certain titles on the home page. The client told me about staff picks in the physical stores and suggested we found a way to implement this</td>
 <td>Employees that update website</td>
 <td>Could</td>
 <td></td>
 </tr>
 <tr>
 <td>Shopping cart</td>
-<td>Customers must be able to add items to a shopping cart</td>
+<td>Customers must be able to add items to a shopping cart. The client said they wanted a conventional shopping cart and check out.</td>
 <td>Customers</td>
 <td>Must</td>
 <td></td>
 </tr>
 <tr>
 <td>Check out page</td>
-<td>The website shall have a check out page that will allow customers to purchase items with credit card/PayPal</td>
+<td>The website shall have a check out page that will allow customers to purchase items with credit card/PayPal. The client said they wanted a conventional check out system</td>
 <td>Customers</td>
 <td>Must</td>
 <td></td>
 </tr>
 <tr>
 <td>Contact page</td>
-<td>The website shall have a contact page that will allow customers to contact or find stores in their vicinity</td>
+<td>The website shall have a contact page that will allow customers to contact or find stores in their vicinity. The client informed me that they have multiple stores so if customers wanted to contact them for any reason they can find the nearest store and contact them</td>
 <td>Customers, Employees contacted by customers</td>
 <td>Could</td>
-<td></td>
+<td>Need to clarify how customers contact the business</td>
 </tr>
 <tr>
 <td>Sale Invoice</td>
-<td>After a customer purchases from the website a sale invoice is sent to them</td>
+<td>After a customer purchases from the website a sale invoice is sent to them. The client showed me a sale invoice that is used for their physical store so this needs to be implemented in an online context</td>
 <td>Customers</td>
 <td>Must</td>
 <td>Need to clarify with client if invoice should be sent eiter via mail or email</td>
@@ -91,22 +91,22 @@ ___<h2>List of Non-Functional Requirements</h2>___
 </tr>
 <tr>
 <td>Virtual stack</td>
-<td>The website must allow customers to flick through a virtual stack of albums.</td>
+<td>The website must allow customers to flick through a virtual stack of albums. The client suggested they wanted to recreate an "old-school record store vibe" and said it would be great if a virtual stack of album covers were implemented</td>
 <td>Usability</td>
 </tr>
 <tr>
 <td>Security</td>
-<td>The website must be secure, specifically the payment details so malicious indviduals do not compromise user/business private information</td>
+<td>The website must be secure, specifically the payment details so malicious indviduals do not compromise user/business private information. The client suggested to use a credit card or PayPal as a payment system, obviously these methods need to be secure so customers information isn't stolen</td>
 <td>Reliability</td>
 </tr>
 <tr>
 <td>Item sort</td>
-<td>User's must be able to sort items by relevance, artist etc.</td>
+<td>User's must be able to sort items by relevance, artist etc. The client suggested that sorting by relevance will work for most cases</td>
 <td>Usability</td>
 </tr>
 <tr>
 <td>Website accesibility</td>
-<td>Users from Australia and New Zealand must be able to access the website and there will be different features for each country for example .com.au/.co.nz</td>
+<td>Users from Australia and New Zealand must be able to access the website and there will be different features for each country for example .com.au/.co.nz. The client suggested they wanted this and to use the same system for both countries</td>
 <td>Supportability</td>
 </tr>
 </table>
@@ -114,15 +114,20 @@ ___<h2>List of Non-Functional Requirements</h2>___
 <br>
 
 ___<h2>Glossary of Terminology</h2>___
-<p>
+**customer** (n.): A member of the public with whom we do business.
 
-</p>
+**register** (v.): To create an account with the business using the online sign-up form.
 
+**online store** (n.): An e-commerce website used to sell the companies products.
+
+**techincal staff** (n.): Staff members of the business that maintain and improve the website.
 <br>
 
 ___<h2>Follow-Up Checklist</h2>___
 <p>
 <ul>
 <li>Can you please into detail about the differences on how you operate between NZ & AU?
+<li>Need to confirm how invoices should be sent. Mail or email?
+<li>How do customers contact you?
 </ul>
 </p>
