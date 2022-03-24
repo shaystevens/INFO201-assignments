@@ -6,7 +6,7 @@ The purpose of the new system is to successfuly implement an online store for HV
 
 Key users of the system are technical staff of HV Lo-Fi and customers. The techincal staff interact with the system by making sure the system remains operational. The customers interact with the system by using it to purchase the products they want.
 
-The internal stakeholders of the system are the employees and owners of HV Lo-Fi. The external stakeholders are the customers, shipping companies that ship products between stores and the suppliers of the stores.
+The internal stakeholders of the system are the employees and owners of HV Lo-Fi. The external stakeholders are the customers, shipping/delivery companies that ship products between stores and the suppliers of the stores.
 </p>
 
 <br>
@@ -77,6 +77,13 @@ same stock as the physical stores. The client said they generally wanted the sam
 <td>Must</td>
 <td>Need to clarify with client if invoice should be sent eiter via mail or email</td>
 </tr>
+<tr>
+<td>Delivery system</td>
+<td>There must be a system in place in order to get items sorted that the customer has purchased to then be delivered to the customer</td>
+<td>Customers, delivery staff, Shipping/delivery companies</td>
+<td>Should</td>
+<td>The client did not mention anything about a delivery system but I would assume one will be in place as it makes it easy to deliver items to customers anywhere in the country they don't necessarly have to be near a store to purchase from the store</td>
+</tr>
 </table>
 
 <br>
@@ -121,6 +128,8 @@ ___<h2>Glossary of Terminology</h2>___
 **online store** (n.): An e-commerce website used to sell the companies products.
 
 **techincal staff** (n.): Staff members of the business that maintain and improve the website.
+
+**delivery staff** (n.): employees that prep items for delivery. 
 <br>
 
 ___<h2>Follow-Up Checklist</h2>___
@@ -129,5 +138,7 @@ ___<h2>Follow-Up Checklist</h2>___
 <li>Can you please into detail about the differences on how you operate between NZ & AU?
 <li>Need to confirm how invoices should be sent. Mail or email?
 <li>How do customers contact you?
+<li>Can you please tell me more about how you will get the products to the customer.
+<li>Would you like any other sorting options like sort by price low to high?
 </ul>
 </p>
