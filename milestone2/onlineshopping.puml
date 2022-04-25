@@ -1,0 +1,30 @@
+@startuml onlineshopping
+actor :Registered\nCustomer: as RegisteredCustomer
+actor :New\nCustomer: as NewCustomer
+actor :Web\nCustomer: as WebCustomer
+actor :Staff: as Staff
+
+usecase (Search for music) as SearchForMusic
+usecase (Browse music) as BrowseMusic
+usecase (Add item to\nshopping cart) as AddItem
+usecase (Modify shopping cart) as ModifyCart
+usecase (Check out\nshopping cart) as Checkout 
+usecase (Register Customer) as RegisterCustomer 
+usecase (Update weekly staff picks) as StaffPicks
+
+NewCustomer -- RegisterCustomer
+RegisteredCustomer -- BrowseMusic
+NewCustomer -- BrowseMusic
+RegisteredCustomer -- SearchForMusic
+NewCustomer -- SearchForMusic
+SearchForMusic -- AddItem
+BrowseMusic -- AddItem
+RegisteredCustomer -- ModifyCart 
+NewCustomer -- ModifyCart
+NewCustomer -- Checkout
+RegisteredCustomer -- Checkout
+WebCustomer --|> RegisteredCustomer
+WebCustomer --|> NewCustomer
+Staff -- StaffPicks
+
+@enduml
