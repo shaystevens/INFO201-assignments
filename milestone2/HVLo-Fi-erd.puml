@@ -1,0 +1,62 @@
+@startuml HV Lo-Fi
+
+skinparam Style StrictUML
+skinparam LineType ortho
+skinparam monochrome true
+
+class Customer {
+    * Customer_ID
+--
+    * First_Name
+    * Surname
+    * Phone_Number
+    * Email_Address
+}
+
+class Product {
+    * Product_ID
+--
+    * Product_Name
+    * Product_Price
+    * UnitsInStock
+}
+
+class Order {
+    * Order_ID
+--
+    * Customer_ID
+    * Delivery_Number
+    * Delivery_Date
+}
+
+class Delivery {
+    * Delivery_Number
+--
+    * Delivery_status
+    * Delivery_address
+    * Delivery_Date
+    * Delivery_City
+}
+
+class Payment_Details {
+    * Find_PK
+--
+    * temp
+
+}
+
+class Order_Details {
+    * Order_ID
+    * Product_ID
+--
+    * Price
+    * Quantity
+}
+
+Customer ||-o{ Order
+Customer ||-|{ Payment_Details
+Delivery ||-|{ Order
+Order ||-|{ Order_Details
+Order_Details }|-|| Product
+
+@enduml
