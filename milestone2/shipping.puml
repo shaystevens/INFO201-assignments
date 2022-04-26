@@ -5,6 +5,6 @@ usecase (Gift wrap items) as GiftWrap
 usecase (Ship purchased\nitems) as ShipItems
 
 Staff -- ShipItems
-GiftWrap -- ShipItems
+GiftWrap .> ShipItems : <<extend>>
 
 @enduml
