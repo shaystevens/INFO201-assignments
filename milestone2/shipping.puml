@@ -1,0 +1,10 @@
+@startuml shipping
+actor :Staff: as Staff
+
+usecase (Gift wrap items) as GiftWrap
+usecase (Ship purchased\nitems) as ShipItems
+
+Staff -- ShipItems
+GiftWrap -- ShipItems
+
+@enduml
