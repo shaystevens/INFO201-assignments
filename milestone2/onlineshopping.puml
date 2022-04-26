@@ -11,20 +11,26 @@ usecase (Modify shopping cart) as ModifyCart
 usecase (Check out\nshopping cart) as Checkout 
 usecase (Register Customer) as RegisterCustomer 
 usecase (Update weekly staff picks) as StaffPicks
+usecase (Veifry information) as Verify
+usecase (Display\nRegister Error) as RegisterError
 
 NewCustomer -- RegisterCustomer
 RegisteredCustomer -- BrowseMusic
 NewCustomer -- BrowseMusic
 RegisteredCustomer -- SearchForMusic
 NewCustomer -- SearchForMusic
-SearchForMusic -- AddItem
-BrowseMusic -- AddItem
+SearchForMusic ..> AddItem : <<extend>>
+BrowseMusic .> AddItem : <<extend>>
 RegisteredCustomer -- ModifyCart 
 NewCustomer -- ModifyCart
+ModifyCart .> Checkout : <<extend>>
+Checkout <. AddItem: <<extend>>
 NewCustomer -- Checkout
 RegisteredCustomer -- Checkout
 WebCustomer --|> RegisteredCustomer
 WebCustomer --|> NewCustomer
 Staff -- StaffPicks
+RegisterCustomer ..> Verify : <<include>>
+RegisterError .> RegisterCustomer : <<extend>>
 
 @enduml
