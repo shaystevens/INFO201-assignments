@@ -37,7 +37,7 @@ RegisterCustomer ..> CollectCustomerInformation : <<include>>
 Checkout ..> checkregister : <<include>>
 checkregister .> RegisterCustomer : <<extend>>
 Checkout .> CollectAddress : <<include>>
-CollectAddress .> GiftWrap : <<extend>>
-Checkout ..> PaymentDetails : <<include>>
+CollectAddress .> GiftWrap : <<include>>
+Checkout ..> CollectPayment : <<include>>
 
 @enduml
