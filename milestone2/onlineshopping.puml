@@ -11,14 +11,20 @@ usecase (Check out\nshopping cart) as Checkout
 usecase (Register Customer) as RegisterCustomer 
 usecase (Collect customer's information) as CollectCustomerInformation
 usecase (Check customer\nhas registered) as checkregister
+usecase (Collect Shipping address) as CollectAddress
+usecase (Collect Payment details) as CollectPayment
+usecase (Check if items should\nbe gift wrapped) as GiftWrap
+usecase (Collect payment details) as PaymentDetails
+usecase (Log in) as Login
 
+RegisteredCustomer --- Login
 NewCustomer -- RegisterCustomer
-RegisteredCustomer -- BrowseMusic
-NewCustomer -- BrowseMusic
-RegisteredCustomer -- SearchForMusic
-NewCustomer -- SearchForMusic
+RegisteredCustomer --- BrowseMusic
+NewCustomer --- BrowseMusic
+RegisteredCustomer --- SearchForMusic
+NewCustomer --- SearchForMusic
 AddItem .> Checkout : <<extend>>
-SearchForMusic ..> AddItem : <<extend>>
+SearchForMusic ...> AddItem : <<extend>>
 BrowseMusic .> AddItem : <<extend>>
 RegisteredCustomer -- ModifyCart 
 NewCustomer -- ModifyCart
@@ -26,10 +32,14 @@ ModifyCart .> Checkout : <<extend>>
 AddItem .> ModifyCart : <<extend>>
 NewCustomer -- Checkout
 RegisteredCustomer -- Checkout
-WebCustomer --|> RegisteredCustomer
-WebCustomer --|> NewCustomer
+WebCustomer ---|> RegisteredCustomer
+WebCustomer ---|> NewCustomer
 RegisterCustomer ..> CollectCustomerInformation : <<include>>
 Checkout ..> checkregister : <<include>>
 checkregister .> RegisterCustomer : <<extend>>
+Checkout .> CollectAddress : <<include>>
+Checkout ....> CollectPayment : <<include>>
+CollectAddress .> GiftWrap : <<extend>>
+Checkout ..> PaymentDetails : <<include>>
 
 @enduml
