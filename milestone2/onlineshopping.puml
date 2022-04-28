@@ -5,7 +5,9 @@ actor :Web\nCustomer: as WebCustomer
 
 usecase (Search for music) as SearchForMusic
 usecase (Browse music) as BrowseMusic
+usecase (Browse Staff Picks) as BrowseStaffPicks
 usecase (Add item to\nshopping cart) as AddItem
+usecase (View Shopping Cart) as ViewCart
 usecase (Modify shopping cart) as ModifyCart
 usecase (Check out\nshopping cart) as Checkout 
 usecase (Register Customer) as RegisterCustomer 
@@ -20,16 +22,20 @@ usecase (Authenticate User) as Authenticate
 RegisteredCustomer --- Login
 NewCustomer -- RegisterCustomer
 RegisteredCustomer --- BrowseMusic
+RegisteredCustomer -- BrowseStaffPicks
+NewCustomer -- BrowseStaffPicks
 NewCustomer --- BrowseMusic
 RegisteredCustomer --- SearchForMusic
 NewCustomer --- SearchForMusic
 AddItem .> Checkout : <<extend>>
 SearchForMusic ...> AddItem : <<extend>>
 BrowseMusic .> AddItem : <<extend>>
-RegisteredCustomer -- ModifyCart 
-NewCustomer -- ModifyCart
-ModifyCart .> Checkout : <<extend>>
-AddItem .> ModifyCart : <<extend>>
+BrowseStaffPicks ..> AddItem : <<extend>>
+RegisteredCustomer -- ViewCart
+NewCustomer -- ViewCart
+ViewCart .> Checkout : <<extend>>
+ViewCart ..> ModifyCart : <<extend>>
+AddItem .> ViewCart : <<extend>>
 NewCustomer -- Checkout
 RegisteredCustomer -- Checkout
 WebCustomer <|--- RegisteredCustomer
