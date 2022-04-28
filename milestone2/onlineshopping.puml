@@ -15,6 +15,7 @@ usecase (Collect Shipping address) as CollectAddress
 usecase (Collect Payment details) as CollectPayment
 usecase (Check if items should\nbe gift wrapped) as GiftWrap
 usecase (Log in) as Login
+usecase (Authenticate User) as Authenticate
 
 RegisteredCustomer --- Login
 NewCustomer -- RegisterCustomer
@@ -31,13 +32,15 @@ ModifyCart .> Checkout : <<extend>>
 AddItem .> ModifyCart : <<extend>>
 NewCustomer -- Checkout
 RegisteredCustomer -- Checkout
-WebCustomer ---|> RegisteredCustomer
-WebCustomer ---|> NewCustomer
+WebCustomer <|--- RegisteredCustomer
+WebCustomer <|--- NewCustomer
 RegisterCustomer ..> CollectCustomerInformation : <<include>>
 Checkout ..> checkregister : <<include>>
 checkregister .> RegisterCustomer : <<extend>>
 Checkout .> CollectAddress : <<include>>
 CollectAddress .> GiftWrap : <<include>>
 Checkout ..> CollectPayment : <<include>>
+Login ..> Authenticate : <<require>>
+
 
 @enduml
