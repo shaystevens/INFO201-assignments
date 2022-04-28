@@ -1,0 +1,41 @@
+@startsalt  
+{
+<size:20><b>Registration Form:
+--
+<size:13><b>Personal Details:
+.
+Full Name <color:red>*</color>
+"First name            "|"Surname             "
+.
+Phone Number <color:red>*</color>
+"027 123 4567    "
+.
+Email Address <color:red>*</color>
+"example@gmail.com    "
+.
+Postal Address <color:red>*</color>
+"1 Example street  "
+"Everglade   "
+"Dunedin   "
+.
+Country <color:red>*</color>
+^New Zealand^^Australia^
+.
+.
+Date of Birth (Optional: Find relevant music)
+"           "
+.
+<size:13><b>Musical Preferences:
+[]Pop | []2010s
+[]Rock|[]2000s
+[]Hip-Hop|[]1990s
+[]Jazz|[]1980s
+[]Adult Contemporary|[]1970s
+[]Classical|[]1960s
+[]Alternative|[]1950s
+[]Metal|[]1940s and earlier
+[]Dark Electro-Grindcore
+
+
+}
+@endsalt
