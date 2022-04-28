@@ -3,8 +3,21 @@ actor :Staff: as Staff
 
 usecase (Gift wrap items) as GiftWrap
 usecase (Ship purchased\nitems) as ShipItems
+usecase (Check items have been paid) as CheckItemsPaid
+usecase (Check items are available) as CheckAvailability
+usecase (Check if items should\nbe gift wrapped) as CheckGiftWrap
+usecase (Order products from supplier) as ContactSupplier
+usecase (Don't ship items) as NoShipping
 
 Staff -- ShipItems
-GiftWrap .> ShipItems : <<extend>>
+GiftWrap <. ShipItems : <<extend>>
+ShipItems ..> CheckItemsPaid : <<include>>
+ShipItems ..> CheckAvailability : <<include>>
+ShipItems ..> CheckGiftWrap : <<include>>
+Staff  -- ContactSupplier
+CheckAvailability ..> ContactSupplier : <<extend>>
+ContactSupplier .> NoShipping : <<extend>>
+CheckItemsPaid ..> NoShipping : <<extend>>
+
 
 @enduml
