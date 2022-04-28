@@ -13,11 +13,6 @@ Phone Number <color:red>*</color>
 Email Address <color:red>*</color>
 "example@gmail.com    "
 .
-Postal Address <color:red>*</color>
-"1 Example street  "
-"Everglade   "
-"Dunedin   "
-.
 Country <color:red>*</color>
 ^New Zealand^^Australia^
 .
