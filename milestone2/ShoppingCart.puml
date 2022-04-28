@@ -1,0 +1,17 @@
+@startsalt   
+{
+Shopping Cart:
+{+
+Item | Price | Quantity | Total | Remove
+--|--|--|--|--
+Example Item 1 |$29.99 | "1    " | $29.99 | [<&circle-x>]
+Example Item 2 |$15.49 | "2    " | $15.49 | [<&circle-x>]
+Example Item 3 |$20.00 | "1    " | $20.00 | [<&circle-x>]
+.
+.
+|"" |"" | [Update] | $80.97
+"                         "|"          "|"         "|"          "|"         "
+}
+[Continue Shopping]|[Checkout]
+}
+@endsalt
