@@ -22,6 +22,9 @@ Country <color:red>*</color>
 ^New Zealand^^Australia^
 .
 .
+Are you 18 years old or older:
+()Yes | ()No
+.
 Date of Birth (Optional: Find relevant music)
 "           "
 .
@@ -35,7 +38,7 @@ Date of Birth (Optional: Find relevant music)
 []Alternative|[]1950s
 []Metal|[]1940s and earlier
 []Dark Electro-Grindcore
-
-
+.
+""|""|[Submit]
 }
 @endsalt
