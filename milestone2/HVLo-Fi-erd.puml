@@ -11,6 +11,9 @@ class Customer {
     * Surname
     * Phone_Number
     * Email_Address
+    * Country
+    Date of birth
+    Music taste
 }
 
 class Product {
@@ -25,38 +28,57 @@ class Order {
     * Order_ID
 --
     * Customer_ID
-    * Delivery_Number
-    * Delivery_Date
+    * Shipping_Number
+    * Shipping_Date
+    * Gift wrapped?
 }
 
-class Delivery {
-    * Delivery_Number
+class Shipping {
+    * Shipping_Number
 --
-    * Delivery_status
-    * Delivery_address
-    * Delivery_Date
-    * Delivery_City
+    * Shipping_Status
+    * Shipping_Address
+    * Shipping_Date
+    * Shipping_City
+    * Shipping_Country
 }
 
 class Payment_Details {
-    * Find_PK
+    * Payment_ID
 --
-    * temp
-
+    * Card_Number
+    * CVV
+    * Card_Expiry_Date
 }
 
 class Order_Details {
     * Order_ID
     * Product_ID
 --
-    * Price
+    * Product_Price
     * Quantity
 }
 
-Customer ||-o{ Order
-Customer ||-|{ Payment_Details
-Delivery ||-|{ Order
+class Cart {
+    * Cart_ID
+--
+    * Customer_ID
+}
+
+class Cart_Item {
+    * Cart_ID
+    * Product_ID
+--
+    * Quantity
+}
+
+Customer ||--o{ Order
+Customer ||-|| Cart
+Cart ||-o{ Cart_Item
+Cart_Item |o-|| Product
+Payment_Details }|-|| Customer
+Shipping ||-|{ Order
 Order ||-|{ Order_Details
-Order_Details }|-|| Product
+Order_Details }o-|| Product
 
 @enduml
