@@ -13,6 +13,7 @@ class Customer {
     * Email_Address
     * Country
     Date of birth
+    Shipping Address
     Music taste
 }
 
