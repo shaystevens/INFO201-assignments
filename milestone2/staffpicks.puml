@@ -1,0 +1,10 @@
+@startuml staffPicks
+actor :Staff: as Staff
+
+usecase (Update Staff Picks) as staffpicks
+usecase (Discard old staff picks) as discardpicks
+
+Staff -- staffpicks
+staffpicks .> discardpicks : <<include>>
+
+@enduml
