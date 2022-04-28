@@ -4,7 +4,12 @@ ___<h2>Summary Report</h2>___
 ___<h2>List of Business Rules</h2>___
 <ul>
 <li>Customers must be over the age of 18
-<li> Membership form
+<li> Customers must register before checking out
+<li> Customers can purchase items from NZ & Australia
+<li> Spotify/MusicBrainz is used a database to assist with item searching
+<li> Discard old staff picks
+<li> Apply NZ GST tax when a NZ customer is purchasing products from Australia
+<li> Customers are able to view and purchase items across every store
 </ul>
 ___<h2>Use Case Diagrams</h2>___
 
