@@ -1,5 +1,6 @@
 @startuml shipping
 actor :Staff: as Staff
+actor :Shipping Company: as shippingcompany
 
 usecase (Gift wrap items) as GiftWrap
 usecase (Ship purchased\nitems) as ShipItems
@@ -7,6 +8,7 @@ usecase (Check items have been paid) as CheckItemsPaid
 usecase (Check items are available) as CheckAvailability
 usecase (Check if items should\nbe gift wrapped) as CheckGiftWrap
 usecase (Order products from supplier) as ContactSupplier
+usecase (Process Order) as process
 
 
 Staff -- CheckAvailability
@@ -15,6 +17,8 @@ GiftWrap <. ShipItems : <<extend>>
 CheckAvailability.> CheckItemsPaid : <<include>>
 ShipItems ..> CheckGiftWrap : <<include>>
 CheckAvailability ..> ContactSupplier : <<extend>>
+shippingcompany -- ShipItems
+process -- Staff
 
 
 @enduml
