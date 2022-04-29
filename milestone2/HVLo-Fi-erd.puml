@@ -68,8 +68,8 @@ class Cart {
 }
 
 class Cart_Item {
-    * Cart_ID : varchar 
-    * Product_ID : varchar
+    * Cart_ID : varchar <<FK>>
+    * Product_ID : varchar <<FK>>
 --
     * Quantity : Integer
 }
