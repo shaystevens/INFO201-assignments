@@ -16,3 +16,9 @@ ___<h2>Use Case Diagrams</h2>___
 ___<h2>Entity-Relationship Diagram</h2>___
 
 ___<h2>Lo-Fi UI Mock-Ups</h2>___
+<h3>Customer registration forn</h3>
+https://isgb.otago.ac.nz/info201/stesh969/assignments/blob/master/milestone2/Lo-Fi_Customer_Registerstration.puml
+
+</br>
+<h3>Shopping cart mock up</h3>
+https://isgb.otago.ac.nz/info201/stesh969/assignments/blob/master/milestone2/ShoppingCart.puml
