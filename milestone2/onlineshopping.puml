@@ -2,6 +2,9 @@
 actor :Registered\nCustomer: as RegisteredCustomer
 actor :New\nCustomer: as NewCustomer
 actor :Web\nCustomer: as WebCustomer
+actor :Spotify: as Spotify
+actor :MusicBrainz: as MusicBrainz
+actor :Database System: as database
 
 usecase (Search for music) as SearchForMusic
 usecase (Browse music) as BrowseMusic
@@ -16,6 +19,7 @@ usecase (Check customer\nhas registered) as checkregister
 usecase (Collect Shipping address) as CollectAddress
 usecase (Collect Payment details) as CollectPayment
 usecase (Check if items should\nbe gift wrapped) as GiftWrap
+usecase (Apply appropriate\ntaxes) as taxes
 usecase (Log in) as Login
 usecase (Authenticate User) as Authenticate
 
@@ -47,6 +51,11 @@ Checkout .> CollectAddress : <<include>>
 CollectAddress .> GiftWrap : <<include>>
 Checkout ..> CollectPayment : <<include>>
 Login ..> Authenticate : <<require>>
+CollectPayment ..> taxes : <<include>>
+MusicBrainz <|--- database
+Spotify <|--- database
+database -- BrowseMusic
+database -- SearchForMusic
 
 
 @enduml
