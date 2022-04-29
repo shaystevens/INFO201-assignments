@@ -76,7 +76,7 @@ class Cart_Item {
 }
 
 class Employee {
-    * Employee_ID : varchar <<Generated key>>
+    * Employee_ID : varchar <<Generated>>
 --
     * First_Name : varchar
     * Last_Name : varchar
