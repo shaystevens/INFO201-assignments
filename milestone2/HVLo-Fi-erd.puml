@@ -54,8 +54,8 @@ class Payment_Details {
 }
 
 class Order_Details {
-    * Order_ID : varchar <<FK>> <<Composite>>
-    * Product_ID : varchar <<FK>> <<Composite>>
+    * Order_ID : varchar <<FK>>
+    * Product_ID : varchar <<FK>>
 --
     * Product_Price : Integer
     * Quantity : Integer
