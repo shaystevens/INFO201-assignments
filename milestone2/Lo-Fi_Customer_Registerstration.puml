@@ -2,7 +2,6 @@
 {
 <size:20><b>Registration Form:
 --
-<size:13><b>Personal Details:
 .
 Username <color:red>*</color>
 "Example123   "
@@ -12,6 +11,8 @@ Password <color:red>*</color>
 .
 Re-enter password <color:red>*</color>
 "Password     "
+.
+<size:13><b>Personal Details:
 .
 Full Name <color:red>*</color>
 "First name            "|"Surname             "
