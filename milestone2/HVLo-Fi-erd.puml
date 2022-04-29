@@ -5,72 +5,90 @@ skinparam LineType ortho
 skinparam monochrome true
 
 class Customer {
-    * Customer_ID
+    * Customer_ID : varchar <<Generated>>
 --
-    * First_Name
-    * Surname
-    * Phone_Number
-    * Email_Address
-    * Country
-    Date of birth
-    Shipping Address
-    Music taste
+    * First_Name : varchar
+    * Surname : varchar
+    * Phone_Number : Integer
+    * Email : varchar
+    * Country : varchar
+    Date of birth : date
+    Shipping Address : varchar
+    Music taste : varchar
 }
 
 class Product {
-    * Product_ID
+    * Product_ID : varchar
 --
-    * Product_Name
-    * Product_Price
-    * UnitsInStock
+    * Product_Name : varchar
+    * Product_Price : Integer
+    * UnitsInStock : Integer
 }
 
 class Order {
-    * Order_ID
+    * Order_ID : varchar <<Generated>>
 --
-    * Customer_ID
-    * Shipping_Number
-    * Shipping_Date
-    * Gift wrapped?
+    * Customer_ID : varchar <<FK>>
+    * Shipping_Number : varchar <<FK>>
+    * Shipping_Date : date
+    * Gift wrapped? : BOOLEAN
 }
 
 class Shipping {
-    * Shipping_Number
+    * Shipping_Number : varchar <<Generated>>
 --
-    * Shipping_Status
-    * Shipping_Address
-    * Shipping_Date
-    * Shipping_City
-    * Shipping_Country
+    * Shipped_Status : BOOLEAN
+    * Shipping_Address : varchar
+    * Shipping_Date : date
+    * Shipping_City : varchar
+    * Shipping_Country : varchar
 }
 
 class Payment_Details {
-    * Payment_ID
+    * Payment_ID : varchar <<Generated>>
 --
-    * Card_Number
-    * CVV
-    * Card_Expiry_Date
+    * Customer_ID : varchar <<FK>>
+    * Card_Number : Integer
+    * CVV : Integer
+    * Card_Expiry_Date : date
 }
 
 class Order_Details {
-    * Order_ID
-    * Product_ID
+    * Order_ID : varchar <<FK>> <<Composite>>
+    * Product_ID : varchar <<FK>> <<Composite>>
 --
-    * Product_Price
-    * Quantity
+    * Product_Price : Integer
+    * Quantity : Integer
 }
 
 class Cart {
-    * Cart_ID
+    * Cart_ID : varchar <<Generated>>
 --
-    * Customer_ID
+    * Customer_ID : varchar <<FK>>
 }
 
 class Cart_Item {
-    * Cart_ID
-    * Product_ID
+    * Cart_ID : varchar 
+    * Product_ID : varchar
 --
-    * Quantity
+    * Quantity : Integer
+}
+
+class Employee {
+    * Employee_ID : varchar <<Generated key>>
+--
+    * First_Name : varchar
+    * Last_Name : varchar
+    * Email : varchar
+    * Phone_Number : Integer
+    * Salary : Integer
+}
+
+class Staff_Pick {
+    * Staff_Pick_ID : varchar <<Generated>>
+--
+    * Employee_ID : varchar <<FK>>
+    * Product_ID : varchar <<FK>>
 }
 
 Customer ||--o{ Order
@@ -81,5 +99,8 @@ Payment_Details }|-|| Customer
 Shipping ||-|{ Order
 Order ||-|{ Order_Details
 Order_Details }o-|| Product
+Staff_Pick |o--|{ Employee
+Product }|-o| Staff_Pick
+Order }o--|| Employee
 
 @enduml
