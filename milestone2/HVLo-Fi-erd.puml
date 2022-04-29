@@ -5,7 +5,7 @@ skinparam LineType ortho
 skinparam monochrome true
 
 class Customer {
-    * Username : varchar <<Generated>>
+    * Username : varchar
 --
     * Password : HashedString
     * First_Name : varchar
