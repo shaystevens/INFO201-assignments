@@ -5,8 +5,9 @@ skinparam LineType ortho
 skinparam monochrome true
 
 class Customer {
-    * Customer_ID : varchar <<Generated>>
+    * Username : varchar <<Generated>>
 --
+    * Password : varchar
     * First_Name : varchar
     * Surname : varchar
     * Phone_Number : Integer
@@ -28,7 +29,7 @@ class Product {
 class Order {
     * Order_ID : varchar <<Generated>>
 --
-    * Customer_ID : varchar <<FK>>
+    * Username : varchar <<FK>>
     * Shipping_Number : varchar <<FK>>
     * Shipping_Date : date
     * Gift wrapped? : BOOLEAN
@@ -47,7 +48,7 @@ class Shipping {
 class Payment_Details {
     * Payment_ID : varchar <<Generated>>
 --
-    * Customer_ID : varchar <<FK>>
+    * Username : varchar <<FK>>
     * Card_Number : Integer
     * CVV : Integer
     * Card_Expiry_Date : date
@@ -64,7 +65,7 @@ class Order_Details {
 class Cart {
     * Cart_ID : varchar <<Generated>>
 --
-    * Customer_ID : varchar <<FK>>
+    * Username : varchar <<FK>>
 }
 
 class Cart_Item {

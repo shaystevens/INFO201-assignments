@@ -4,6 +4,15 @@
 --
 <size:13><b>Personal Details:
 .
+Username <color:red>*</color>
+"Example123   "
+.
+Password <color:red>*</color>
+"Password     "
+.
+Re-enter password <color:red>*</color>
+"Password     "
+.
 Full Name <color:red>*</color>
 "First name            "|"Surname             "
 .
@@ -17,7 +26,7 @@ Country <color:red>*</color>
 ^New Zealand^^Australia^
 .
 .
-Are you 18 years old or older:
+Are you 18 years old or older: <color:red>*</color>
 ()Yes | ()No
 .
 Date of Birth (Optional: Find relevant music)
