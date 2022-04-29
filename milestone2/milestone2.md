@@ -12,11 +12,20 @@ ___<h2>List of Business Rules</h2>___
 <li> Customers are able to view and purchase items across every store
 </ul>
 ___<h2>Use Case Diagrams</h2>___
+<h3>Online Shopping use case diagram</h3>
+https://isgb.otago.ac.nz/info201/stesh969/assignments/blob/master/milestone2/onlineshopping.puml
+
+<h3>Shipping use case diagram</h3>
+https://isgb.otago.ac.nz/info201/stesh969/assignments/blob/master/milestone2/shipping.puml
+
+<h3>Updating staff picks use case diagram</h3>
+https://isgb.otago.ac.nz/info201/stesh969/assignments/blob/master/milestone2/staffpicks.puml
 
 ___<h2>Entity-Relationship Diagram</h2>___
+https://isgb.otago.ac.nz/info201/stesh969/assignments/blob/master/milestone2/HVLo-Fi-erd.puml
 
 ___<h2>Lo-Fi UI Mock-Ups</h2>___
-<h3>Customer registration forn</h3>
+<h3>Customer registration form</h3>
 https://isgb.otago.ac.nz/info201/stesh969/assignments/blob/master/milestone2/Lo-Fi_Customer_Registerstration.puml
 
 </br>
