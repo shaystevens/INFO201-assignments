@@ -7,7 +7,7 @@ skinparam monochrome true
 class Customer {
     * Username : varchar <<Generated>>
 --
-    * Password : varchar
+    * Password : HashedString
     * First_Name : varchar
     * Surname : varchar
     * Phone_Number : Integer
